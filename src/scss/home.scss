@@ -1,0 +1,53 @@
+@import "./roots.scss";
+@import "./animations.scss";
+
+.home {
+  background: url("../images/bg.png") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.headline {
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  opacity: 0;
+  animation: FadeDown 1s forwards;
+
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+}
+.disk {
+  width:6em;
+  padding: 5px 0;
+  opacity: 0;
+  animation: Spin 1s forwards;
+}
+
+.signle-animation {
+  opacity: 0;
+  animation: FadeUp 1s forwards;
+
+}
+.home  h5 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-family: $font-extra;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: 1px solid $color-main;
+  margin-top: 25px;
+  font-size: 1.3rem;
+  transition: background 1s;
+  &:hover {
+    background: $bg-extra;
+    color: $color-extra;
+  }
+}

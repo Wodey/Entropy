@@ -1,0 +1,36 @@
+@import "./roots.scss";
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 3.9rem 0;
+}
+html {
+  font-size: 10px;
+  color: $color-main;
+  scroll-behavior: smooth;
+  font-family: $font-main;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 122.5rem;
+  margin: 0 auto;
+}
