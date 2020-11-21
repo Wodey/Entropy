@@ -15,12 +15,12 @@ export default function Header() {
               <GoThreeBars size="3rem" className="toggler-open" onClick={() => open(true)}/>
             </div>
             <ul className={`nav-list ${isOpened ? "active" : ""}`}>
-              <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-              <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
-              <li className="nav-item"><a className="nav-link" href="#features">Features</a></li>
-              <li className="nav-item"><a className="nav-link" href="#pricing">Pricing</a></li>
-              <li className="nav-item"><a className="nav-link" href="#download">Download</a></li>
-              <li className="nav-item"><a className="nav-link" href="#support">Support</a></li>
+              <li className="nav-item"><a className="nav-link" onClick={() => open(false)} href="#">Home</a></li>
+              <li className="nav-item"><a className="nav-link" onClick={() => open(false)} href="#show">#Show</a></li>
+              <li className="nav-item"><a className="nav-link" onClick={() => open(false)} href="#features">Features</a></li>
+              <li className="nav-item"><a className="nav-link" onClick={() => open(false)} href="#pricing">Pricing</a></li>
+              <li className="nav-item"><a className="nav-link" onClick={() => open(false)} href="#download">Download</a></li>
+              <li className="nav-item"><a className="nav-link" onClick={() => open(false)} href="#support">Support</a></li>
               <GoX size="3rem" className="toggler-close" onClick={() => open(false)} />
             </ul>
         </nav>
